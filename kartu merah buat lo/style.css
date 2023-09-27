@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#score{
+    font-size: 50px;
+    font-family: monospace;
+}
+
+.container{
+    background: linear-gradient(to top right,rgb(196, 7, 7),rgb(132, 65, 65));
+    border: 5px double rgb(133, 68, 68);
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.label1{
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+}
+
+#txt{
+    height: 30px;
+    padding: 4px;
+    border-radius: 15px;
+    border: solid rgba(255, 0, 128, 0.318);
+}
+
+/*bagian sesi container-1*/
+.container-1{
+    display: none;
+    background: linear-gradient(to top right,rgb(196, 7, 7),rgb(132, 65, 65));
+    border: 5px solid rgb(133, 68, 68);
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.container-1 :hover{
+    box-shadow: 5px 5px 0px rgb(238, 5, 187);
+}
+
+.content-1{
+    margin-top: 40%;
+}
+
+.tlabel{
+ color: white;
+ font-size: 25px;
+}
+
+#para{
+   position: relative;
+   top: 20px;
+   color: white;
+}
+
+/*sesi reponsive*/
+@media(max-width:330px){
+    .container{
+        width: 200px;
+        height: 200px;
+    }
+    .label1{
+        font-size: 18px;
+    }
+    #txt{
+        height: 20px;
+        border-radius: 15px;
+        border: solid rgba(255, 0, 128, 0.318);
+    }
+    /*sesi container-1*/
+    .container-1{
+        width: 200px;
+        height: 200px;
+    }
+    .tlabel{
+        font-size: 18px;
+       }
+}
